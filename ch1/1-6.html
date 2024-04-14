@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<!--
+      <table>	테이블	
+      <caption>	표 설명 또는 제목	선택사항
+      <tr>	테이블의 행	
+      <td>	테이블의 데이터 셀	
+      <thead>	테이블의 헤더 부분	<tbody> 앞에 와야 함
+      <tbody>	테이블의 본문	본 내용을 담음
+      <tfoot>	테이블의 푸터 부분	<tbody> 뒤에 와야 함
+      <th>	열 또는 행의 헤더	scope 속성으로 row, col 중 선택 
+      colspan	열 병합
+      rowspan	행 병합
+-->
+  <table>
+  <caption>1에서 9까지의 숫자들</caption>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <caption>웹개발 공부 기록</caption>
+    <taead>
+      <tr>
+        <th scope="col">과목</th>
+        <th scope="col">월</th>
+        <th scope="col">화</th>
+        <th scope="col">수</th>
+      </tr>
+    </taead>
+    <tbody>
+      <tr>
+        <th scope="row">HTML</th>
+        <td>60</td>
+        <td>60</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th scope="row">CSS</th>
+        <td>0</td>
+        <td>30</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <th scope="row">JS</th>
+        <td>0</td>
+        <td>60</td>
+        <td>60</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+    <tr>
+      <th scope="row">총 시간</th>
+      <td>60</td>
+      <td>90</td>
+      <td>120</td>
+    </tr>
+  </table>
+  <br>
+
+  <table>
+    <tr>
+      <td>1</td>
+      <td colspan="2">2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td colspan="2" rowspan="2">4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+  </table>
+  <br>
+
+  <table>
+    <colgroup>
+      <col class="weekend">
+      <col span="5">
+      <col class="weekend">
+    </colgroup>
+    <tr>
+      <th scope="col">일</th>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+      <th scope="col">목</th>
+      <th scope="col">금</th>
+      <th scope="col">토</th>
+    </tr>
+    <tr>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+    </tr>
+    <tr>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+    </tr>
+    <tr>    
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+    </tr>
+    <tr>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+      <td>_</td>
+    </tr>
+  </table>
+
+</body>
+</html>
