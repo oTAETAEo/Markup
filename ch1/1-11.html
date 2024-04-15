@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+
+  ⚠️ 권장되지 않는 요소
+  보안상 위험 ( clickjacking 등 )
+  사용성 저하 ( 뒤로가기 문제 등 )
+  검색 최적화 제한
+  브라우저에 무리
+
+-->
+
+  <h1>pre 태그</h1>
+
+  <pre>
+pre 태그에 텍스트를 작성하면 스페이스, 탭, 엔터 등
+모든 공백 요소들이 이와 같이 화면에 그대로 적용됩니다.
+
+때문에 pre 태그는 아래의 아스키 아트(Ascii art)들처럼
+공백요소들을 적극 활용해야 하는 경우 유용하게 사용될 수 있습니다.
+
+하지만 스크린 리더는 pre 태그의 내용을 읽지 않으므로
+접근성을 위해 추가적인 조치가 필요하죠.
+이 부분은 HTML 심화편에서 다루겠습니다.
+
+  </pre>
+
+  <pre>
+    ,d888a                          ,d88888888888ba.  ,88"I)   d
+  a88']8i                         a88".8"8)   `"8888:88  " _a8'
+.d8P' PP                        .d8P'.8  d)      "8:88:baad8P'
+,d8P' ,ama,   .aa,  .ama.g ,mmm  d8P' 8  .8'        88):888P'
+,d88' d8[ "8..a8"88 ,8I"88[ I88' d88   ]IaI"        d8[         
+a88' dP "bm8mP8'(8'.8I  8[      d88'    `"         .88          
+,88I ]8'  .d'.8     88' ,8' I[  ,88P ,ama    ,ama,  d8[  .ama.g
+[88' I8, .d' ]8,  ,88B ,d8 aI   (88',88"8)  d8[ "8. 88 ,8I"88[
+]88  `888P'  `8888" "88P"8m"    I88 88[ 8[ dP "bm8m88[.8I  8[
+]88,          _,,aaaaaa,_       I88 8"  8 ]P'  .d' 88 88' ,8' I[
+`888a,.  ,aadd88888888888bma.   )88,  ,]I I8, .d' )88a8B ,d8 aI
+"888888PP"'        `8""""""8   "888PP'  `888P'  `88P"88P"8m"
+  </pre>
+
+  <!-- 탭 안에 작은 탭이 나온다. (권장X) -->
+  <iframe src="https://www.yalco.kr/@html-css/1-11/"></iframe>
+
+  <h1>기타 알아둘만한 태그들</h1>
+
+  <!--
+    <kbd> 태그는 키보드 입력을 텍스트로 나타낼때 사용
+    <dfn> 태그는 특정 맥락에서 정의 설명 하고 있는 용어를 나타낼때 사용
+    <small> 태그는 태그 사이에 있는 문장을 작게 표시하는데 사용한다.
+
+  -->
+  <p>
+    kbd 태그는 <kbd>Ctrl</kbd> + <kbd>C</kbd> 와 같이 키보드 입력을 나타낼 때 사용합니다.
+  </p>
+  <p>
+    <dfn>dfn 태그</dfn>는 특정 맥락에서 정의, 설명하고 있는 용어를 나타낼 때 사용합니다.
+  </p>
+  <p>
+    small 태그는 <small>이와 같이 텍스트를 작게</small> 표시하는데 사용됩니다. 
+  </p>
+
+  <h1>아무것도 하지 않는 두 태그</h1>
+
+  <!--
+
+    <span>과 <div>는 특별한 기능이 없는 컨텐츠 주머니입니다.
+    이 둘의 차이는 주머니의 모양과 차지하는 공간이죠.
+
+    <strong>, <em>, <a> 등의 태그에서 기능을 빼면 <span>,
+    <h1~6>, <p>, <ul> 등의 태그에서 기능을 빼면 <div>가 됩니다.
+    inline과 block 으로 나누어진다.
+
+    <span> 입력된 공간만 차지
+    <div> 한줄을 모두 차지
+    -->
+  <span>span 태그 1</span>
+  <span>span 태그 2</span>
+  <span>span 태그 3</span>
+  <span>span 태그 4</span>
+  <span>span 태그 5</span>
+
+  <br><br>
+
+  <div>div 태그 1</div>
+  <div>div 태그 2</div>
+  <div>div 태그 3</div>
+  <div>div 태그 4</div>
+  <div>div 태그 5</div>
+
+</body>
+</html>
