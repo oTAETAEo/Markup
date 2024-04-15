@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <!-- 
+    (한번에 보여지는 범위)
+    cols	글자수 단위의 너비
+    rows	표시되는 줄 수	
+
+    아래 처럼 작성할때 닫는 태그가 아래처럼 되어있어야 한다.
+  -->
+  <textarea 
+    name="" 
+    id="" 
+    cols="100" 
+    rows="10" 
+    placeholder="본문을 입력하시오"></textarea>
+
+    <h1>옵션들을 사용하는 태그</h1>
+
+    <h2>select, option 태그</h2>
+  
+  <!--
+    multiple	<select>	다중 선택 가능. 드랍다운 대신 상자로 표시
+    selected	<option>	선택됨 ( checkbox, radio의 checked처럼 ) 최초에 미리 선택 되어있게 한다.
+    value	<option>	실제로 전송될 값
+    list	<input>	연결할 <datalist>의 ID  선택할수 할수 있는 박스를 ID로 연결.
+  -->
+
+    <label for="lang" >언어</label> <br>
+    <select id="lang" >
+      <option value="">-- 언어 선택 --</option>
+      <option value="html" >HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">자바스크립트</option>
+      <option value="ts">타입스크립트</option>
+    </select>
+  
+    <h2>optgroup 태그</h2>
+
+    <label for="shopping">쇼핑 목록</label> <br>
+    <select id="shopping">
+      <optgroup label="과일">
+        <option value="f_apl">사과</option>
+        <option value="f_grp">포도</option>
+        <option value="f_org">오렌지</option>
+      </optgroup>
+      <optgroup label="채소">
+        <option value="v_crt">당근</option>
+        <option value="v_tmt">토마토</option>
+        <option value="v_ept">가지</option>
+      </optgroup>
+      <optgroup label="육류">
+        <option value="m_bef">소고기</option>
+        <option value="m_prk">돼지고기</option>
+        <option value="m_ckn">닭고기</option>
+      </optgroup>
+    </select>
+  
+    <h2>datalist 태그</h2>
+
+    <label for="job">현재 직업</label> <br>
+    <input id="job" list="jobs">
+    <datalist id="jobs">
+      <option value="학생">
+      <option value="디자이너">
+      <option value="퍼블리셔">
+      <option value="개발자">
+    </datalist>
+
+  <h1>정도를 표현하는 태그</h1>
+
+  <!-- 
+    <progress> 태그 속성들
+    max	최대값	기본: 1
+    value	진행 수치	
+
+    <meter> 태그 속성들
+    min, max	최소값과 최대값	
+    low, high	전체 범위를 3등분하는 두 수치	낮은값 높은값 구분.
+    optimum	이상적인 값
+    value	실제 값	
+
+    이상적인 값에서 멀어지면 색이 달라짐.
+  -->
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100"
+    >
+    0%
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <h2>
+    meter 태그
+  </h2>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
+
+  <br><br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="80">
+    80달러
+  </meter>
+
+  <br> <br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="80">
+    80달러
+  </meter>
+
+
+</body>
+</html>
