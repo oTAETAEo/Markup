@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pretty.css">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <form>	정보를 제출하기 위한 태그들을 포함	autocomplete 속성: 자동완성 여부 (기본: on)
+    <input>	입력을 받는 요소	type 속성을 통해 다양화
+    <label>	인풋 요소마다의 라벨	for 속성값을 인풋 요소의 id와 연결. 인풋의 클릭 영역 확장
+    <button>	버튼	type 속성에 submit(제출), reset(초기화), button(기본 동작 없음) 
+    <fieldset>	폼 태그 내 입력요소와 라벨들을 그룹화	disabled 속성: 포함된 입력요소 비활성화
+    <legend>	필드셋 요소의 제목 또는 설명
+    ⭐️ id 속성: 페이지마다 고유해야 함!
+    label의 for와 input의 id를 일치시켜야 합니다.
+    id와 for가 같아야 레이블을 클릭했을 때 해당 인풋 요소가 선택됩니다.
+-->
+
+  <form
+    action="#"
+    method="get"
+    autocomplete="on"
+  >
+
+    <label for="name">이름</label>
+    <input id="name" name="my-name" type="text">
+
+    <br><br>
+
+    <label for="age">나이</label>
+    <input id="age" name="my-age" type="number">
+
+    <br><br>
+
+    <button type="submit">제출</button>
+    <button type="reset">초기화</button>
+    <button type="button">버튼</button>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>반장</legend>
+
+      <label for="name_1">이름</label>
+      <input id="name_1" name="name_1" type="text">
+      <br><br>
+
+      <label for="age_2">나이</label>
+      <input id="age_1" name="age_1" type="number">
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>부반장</legend>
+
+      <label for="name_2">이름</label>
+      <input id="name_2" name="name_2" type="text">
+      <br><br>
+
+      <label for="age_2">나이</label>
+      <input id="age_2" name="age_2" type="number">
+
+    </fieldset>
+    <br>
+
+    <fieldset disabled>
+      <legend>서기</legend>
+
+      <label for="name_3">이름</label>
+      <input id="name_3" name="name_3" type="text">
+      <br><br>
+
+      <label for="age_3">나이</label>
+      <input id="age_3" name="age_3" type="number">
+    </fieldset>
+  </form>
+
+
+</body>
+</html>
