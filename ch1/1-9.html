@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- 모든 관련 -->
+
+  <!--
+    <form action = "(여기에)">  속성에 담겨있는 데이터를 어디로 이동할까 경로 지정.
+    <label for="(여기에)">  각각의 <input> 태그의 고유한 id를 넣어 연결하면 텍스트를 클릭해도 거기에 맞는 칸이 선택이 된다.
+  -->
+  
+  <h1>텍스트 관련 인풋 타입</h1>
+
+  <!-- 
+    placeholder	빈 칸에 보이는 안내문	
+    maxlength	최대 길이	
+    minlength	최소 길이	위반시 submit이 거부됨 
+    type="tel" 로 지정하면 모바일에서 브라우저는 일반적인 키패드가 아닌 숫자 패드를 제공한다.
+  -->
+  <form action="#">
+    <label for="txtIp">text</label> <br>
+    <input 
+      id="txtIp"
+      type="text"
+      placeholder="5자 이하"
+      maxlength="5"
+    >
+    <br><br>
+
+    <label for="pwdIp">password</label> <br>
+    <input
+      id="pwdIp"
+      type="password"
+      placeholder="4자 이상"
+      minlength="4"
+    >
+    <br><br>
+
+    <label for="srchIp">search</label> <br>
+    <input id="srchIp" type="search">
+    <br><br>
+
+    <label for="tlIp">tel</label> <br>
+    <input id="tlIp" type="tel">
+    <br><br>
+    <button type="submit">제출</button>
+  </form>
+  
+  <h1>숫자 관련 인풋 타입</h1>
+
+  <!-- 
+    min	최소값	date 등 타입마다 형식 다름
+    max	최대값	date 등 타입마다 형식 다름
+    step	간격	 
+  -->
+  <form action="#">
+    <label for="numIp">number</label> <br>
+    <input 
+      id="numIp"
+      type="number"
+      min="0"
+      max="10"
+    >
+    <br><br>
+
+    <label for="rgIp">range</label> <br>
+    <input
+      id="rgIp"
+      type="range"
+      min="0"
+      max="100"
+      step="20"
+
+    >
+    <br><br>
+
+    <label for="dtIp">date</label> <br>
+    <input
+      id="dtIp"
+      type="date"
+      min="2020-01-01"
+      max="2030-12-31"
+    >
+    <br><br>
+
+  </form>
+
+  <h1>체크 관련 인풋 타입</h1>
+
+  <!-- 
+    checked	체크박스 & 라디오	체크됨 여부
+    name	라디오 (다른 타입들에서도 사용)	옵션들의 그룹으로 사용됨
+    value	라디오 (다른 타입들에서도 사용)	각 옵션마다 실제로 넘겨질 값 
+  -->
+  <form action="#">
+    <h2>checkbox</h2>
+    <input 
+    id="cbIp"
+    type="checkbox"
+    checked
+    >
+    <label for="cbIp">유기농</label> <br>
+
+    <h2>radio</h2>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+
+  </form>
+
+  
+  <h1>기타 인풋 타입</h1>
+
+  <!-- 
+    accept	받아들일 수 있는 파일 형식	
+    multiple	여러 파일 업로드 가능 여부	
+   -->
+  <form action="#">
+    <label for="fileIp">file</label> <br>
+    <input 
+      id="fileIp"
+      type="file"
+      accept="image/png, image/jpeg"
+      multiple
+    >
+    <br><br>
+
+    <label for="hdnIp">hidden</label> <br>
+    <input
+      id="hdnIp"
+      type="hidden"
+    >
+  </form>
+
+  <br><hr><br>
+
+  <form action="#">
+    <label for="emlIp">email</label> <br>
+    <input 
+      id="emlIp"
+      type="email"
+    >
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
+
+</body>
+</html>
