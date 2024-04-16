@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--
+      내부 스타일 시트(internal style sheet) 방식은 head 태그 안에 style 태그를 두고 그 안에 CSS 코드를 작성하는 방식입니다.
+      HTML과 CSS의 전체 코드량이 많지 않고 CSS가 해당 HTML 문서에서만 적용될 경우
+      유용하게 사용될 수 있습니다.
+    -->
+    <style>
+      .style-1 {
+        color: rgb(166, 243, 11);
+      }
+    </style>
+
+    <!-- 
+      링킹 스타일 시트(linking style sheet) 방식은 외부의 CSS 파일을 HTML 문서에 연결하는 것입니다.
+      HTML과 CSS의 코드가 분리되고 CSS 코드를 여러 HTML 파일에서 공통으로 사용할 수 있으므로
+      가장 널리 사용되는 방식입니다.
+    -->
+    <link rel="stylesheet" href="./2-1style.css">
+
+  </head>
+<body>
+
+  <h1>CSS를 적용하는 세 가지 방법</h1>
+
+  <p>
+    <b style="color: tomato;">
+      인라인 스타일(inline style)
+    </b>
+    방식은 HTML 태그마다 style 속성으로 CSS 코드를 넣어주는 방식입니다. <br> 여러 요소들에 공통 속성을 재사용하여 부여할 수 없고 HTML 코드와 CSS 코드가 분리되지 않기 때문에 <br> 특별한 경우를 제외하고는 사용되지 않습니다.
+  </p>
+  <p>
+    <b class="style-1">내부 스타일 시트(internal style sheet)</b> 방식은 head 태그 안에 style 태그를 두고 그 안에 CSS 코드를 작성하는 방식입니다. <br>
+    HTML과 CSS의 전체 코드량이 많지 않고 CSS가 해당 HTML 문서에서만 적용될 경우 <br>
+    유용하게 사용될 수 있습니다.
+  </p>
+  <p>
+    <b class="style-2">링킹 스타일 시트(linking style sheet)</b> 방식은 외부의 CSS 파일을 HTML 문서에 연결하는 것입니다. <br>
+    HTML과 CSS의 코드가 분리되고 CSS 코드를 여러 HTML 파일에서 공통으로 사용할 수 있으므로 <br>
+    가장 널리 사용되는 방식입니다.
+  </p>
+
+  <h1>기본 & 그룹 선택자</h1>
+
+  <span>
+    span 요소
+  </span>
+
+  <p>
+    p 요소
+  </p>
+
+  <p class="blue">
+    p 요소, class는 blue
+  </p>
+
+  <span class="blue">
+    span 요소, class는 blue
+  </span>
+
+  <p class="blue dark">
+    p 요소, class는 blue와 dark
+  </p>
+
+  <p class="blue" id="red">
+    p 요소, class는 blue, id는 red
+  </p>
+
+  <h1>결합자와 가상 클래스</h1>
+
+	<ul class="outer">
+		<li>육류</li>
+		<li>채소</li>
+		<li>유제품</li>
+		<li>과일
+			<ul>
+				<li>사과</li>
+				<li>포도</li>
+				<li>딸기</li>
+				<li>키위</li>
+			</ul>
+		</li>
+	</ul>
+
+	<ol>
+		<li>한놈</li>
+		<li>두시기</li>
+		<li class="starter">석삼</li>
+		<li>너구리</li>
+		<li>다섯놈</li>
+		<li>육개장</li>
+		<li>칠푼이</li>
+		<li>팔보채</li>
+		<li>구공탄</li>
+	</ol>
+	
+</body>
+</html>
